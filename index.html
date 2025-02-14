@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kişisel Web Sitesi</title>
+    <title>Benim Blogum</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,29 +13,59 @@
         <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
             <li><a href="#projeler">Projelerim</a></li>
+            <li><a href="#video">Video</a></li>
             <li><a href="#iletisim">İletişim</a></li>
         </ul>
     </nav>
 
     <!-- Hakkımda Bölümü -->
     <section id="hakkimda">
-        <h1>Merhaba, Ben [İsmin]</h1>
+        <h1>Merhaba, Ben Emir</h1>
         <p>Bilgisayar mühendisiyim. Web geliştirme ve veri bilimi ile ilgileniyorum.</p>
         <img src="images/emir.jpg" alt="Benim Fotoğrafım" width="200">
+    </section>
+
+    <!-- Projeler Bölümü -->
+    <section id="projeler">
+        <h2>Projelerim</h2>
+        <p>İşte bazı projelerim:</p>
+        <ul>
+            <li><strong>Veri Bilimi Projesi:</strong> Büyük veri analizi çalışmaları.</li>
+            <li><strong>Web Geliştirme:</strong> HTML, CSS ve JavaScript ile modern web siteleri.</li>
+        </ul>
+        <img src="images/proje.jpg" alt="Proje Görseli" width="400">
     </section>
 
     <!-- Video Ekleme -->
     <section id="video">
         <h2>Tanıtım Videom</h2>
-        <video width="400" controls>
+        <video width="600" controls>
             <source src="videos/efe.mp4" type="video/mp4">
             Tarayıcınız video etiketini desteklemiyor.
         </video>
     </section>
 
+    <!-- İletişim Bölümü -->
+    <section id="iletisim">
+        <h2>İletişim</h2>
+        <p>Bana ulaşmak için aşağıdaki formu doldurun.</p>
+        <form action="submit.php" method="post">
+            <label for="isim">Adınız:</label>
+            <input type="text" id="isim" name="isim" required>
+            
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mesaj">Mesajınız:</label>
+            <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+            
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
     <!-- Footer (Alt Bilgi) -->
     <footer>
-        <p>© 2025 [İsmin] - Tüm hakları saklıdır.</p>
+        <p>© 2025 Emir - Tüm hakları saklıdır.</p>
     </footer>
 
 </body>
